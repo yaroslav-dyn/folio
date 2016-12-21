@@ -1,0 +1,18 @@
+$main-font-family: "Droid Sans", sans-serif;
+//colors & bg
+$header_bg: #48474d;
+
+$main__nav_link-color: #7a7880;
+$main__nav_link-color-hover: #2ac5c6;
+$main__nav_dropdown-bg: #3b3a40;
+
+//sizes
+$header-height: 100px;
+
+
+//mixins
+
+@mixin border_radius($x){
+  -webkit-border-radius: $x;
+  border-radius: $x;
+}

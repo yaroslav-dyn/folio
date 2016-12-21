@@ -1,15 +1,15 @@
 //main scss file
-//include modules libs
-@import '_fonts';
-@import '_variables';
+//include shared modules
+@import '_shared/_fonts';
+@import '_shared/_variables';
 
-html{
-	font-size: 16px;
-}
-body{
 
-}
+
+@import 'project';
+
+//components
+@import '_components/_navigation';
 
 
 //import media
-@import '_media';
+@import '_shared/_media';

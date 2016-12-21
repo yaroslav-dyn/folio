@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Risk Insights</title>
+  <title>Folio</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -16,11 +16,92 @@
   <!-- build:css css/main.css -->
   <link rel="stylesheet" href="css/main.css"/>
   <!-- endbuild -->
-
 </head>
 <body>
-<header>
-  
+<header class="header navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2">
+        <div class="navbar-header">
+            <a href="./index.html" class="site__logo_link">
+              <img src="img/logo.png" alt="" class="site__logo_img"/>
+            </a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar-collapse" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <nav class="navbar main__nav ">
+          <div class="collapse navbar-collapse" id="main-navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li class="main__nav_item">
+                <a href="#" class="main__nav_link">Home</a>
+              </li>
+              <li class="main__nav_item">
+                <a href="#" class="main__nav_link">About</a>
+              </li>
+
+              <li class="dropdown main__nav_item">
+                <a href="#" class="dropdown-toggle main__nav_link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Service 1</a></li>
+                  <li><a href="#">Service 2</a></li>
+                  <li><a href="#">SService 3</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown main__nav_item">
+                <a href="#" class="dropdown-toggle main__nav_link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  Our Team
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </li>
+
+              <li class="main__nav_item">
+                <a class="main__nav_link">Portfolio</a>
+              </li>
+              <li class="main__nav_item">
+                <a class="main__nav_link">Blog</a>
+              </li>
+              <li class="main__nav_item">
+                <a class="main__nav_link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+      </div>
+
+      <div class="col-md-2 pull-right">
+        <nav class="navbar main__nav main__nav--panel">
+          <ul class="nav navbar-nav">
+            <li class="main__nav_item main__nav_item--panel">
+              <a class="main__nav_link main__nav_link--panel pn-settings" href="#"></a>
+            </li>
+            <li class="main__nav_item main__nav_item--panel">
+              <span class="main__nav_notice">2</span>
+              <a class="main__nav_link main__nav_link--panel pn-notice" href="#"></a>
+            </li>
+            <li class="main__nav_item main__nav_item--panel ">
+              <a class="main__nav_link main__nav_link--panel pn-search" href="#"></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
 </header>
-<div class="wrapper">
+
 

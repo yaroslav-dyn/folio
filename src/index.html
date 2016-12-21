@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Risk Insights</title>
+  <title>Folio</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -16,20 +16,171 @@
   <!-- build:css css/main.css -->
   <link rel="stylesheet" href="css/main.css"/>
   <!-- endbuild -->
-
 </head>
 <body>
-<header>
-  
+<header class="header navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2">
+        <div class="navbar-header">
+            <a href="./index.html" class="site__logo_link">
+              <img src="img/logo.png" alt="" class="site__logo_img"/>
+            </a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar-collapse" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <nav class="navbar main__nav ">
+          <div class="collapse navbar-collapse" id="main-navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li class="main__nav_item">
+                <a href="#" class="main__nav_link">Home</a>
+              </li>
+              <li class="main__nav_item">
+                <a href="#" class="main__nav_link">About</a>
+              </li>
+
+              <li class="dropdown main__nav_item">
+                <a href="#" class="dropdown-toggle main__nav_link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Service 1</a></li>
+                  <li><a href="#">Service 2</a></li>
+                  <li><a href="#">SService 3</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown main__nav_item">
+                <a href="#" class="dropdown-toggle main__nav_link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  Our Team
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </li>
+
+              <li class="main__nav_item">
+                <a class="main__nav_link">Portfolio</a>
+              </li>
+              <li class="main__nav_item">
+                <a class="main__nav_link">Blog</a>
+              </li>
+              <li class="main__nav_item">
+                <a class="main__nav_link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+      </div>
+
+      <div class="col-md-2 pull-right">
+        <nav class="navbar main__nav main__nav--panel">
+          <ul class="nav navbar-nav">
+            <li class="main__nav_item main__nav_item--panel">
+              <a class="main__nav_link main__nav_link--panel pn-settings" href="#"></a>
+            </li>
+            <li class="main__nav_item main__nav_item--panel">
+              <span class="main__nav_notice">2</span>
+              <a class="main__nav_link main__nav_link--panel pn-notice" href="#"></a>
+            </li>
+            <li class="main__nav_item main__nav_item--panel ">
+              <a class="main__nav_link main__nav_link--panel pn-search" href="#"></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
 </header>
-<div class="wrapper">
-<div class="content">
-  <p>Hello new template</p>
-</div>  
+<div class="main">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2">
+
+        <div class="sidebar-fixed">
+          <div class="sidebar-nav-wrapper">
+            <nav class="main__nav sidebar__nav sidebar__nav--pad">
+              <ul class="nav">
+
+                <li class="main__nav_item sidebar__nav_item">
+                  <a href="#" class="main__nav_link sidebar__nav_link">Illustration</a>
+                </li>
+                <li class="main__nav_item sidebar__nav_item">
+                  <a href="#" class="main__nav_link sidebar__nav_link">Logos</a>
+                </li>
+                <li class="main__nav_item sidebar__nav_item">
+                  <a href="#" class="main__nav_link sidebar__nav_link">Graphic Design</a>
+                </li>
+                <li class="main__nav_item sidebar__nav_item">
+                  <a href="#" class="main__nav_link sidebar__nav_link">Mobile</a>
+                </li>
+                <li class="main__nav_item sidebar__nav_item">
+                  <a href="#" class="main__nav_link sidebar__nav_link">Web</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="blog">
+
+            <h5 class="blog__header">Recent Blog Posts</h5>
+
+            <div class="blog__item">
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="blog__item_data blog__item_data--green">
+                    <div class="blog__item_dt">
+                      oct <br/>
+                      04
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-10">
+                  <div class="blog__item_content">
+                    <h6 class="blog__item_header">Post Title</h6>
+                    <span class="blog__author">Posted by admin in Blog</span>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis metus vitae ligula elementum ut
+                      luctus lorem facilisis. Sed non leo nisl, ac euismod nisi. Aenean augue dolor, facilisis id fringilla
+                      ut, tempus vitae nibh. Nullam nec diam risus. Donec laoreet ultricies rhoncus. Aliquam adipiscing,
+                    </p>
+                    <a href="#">Continue reading ...</a>
+                  </div>
+                </div>
+              </div>
 
 
-<footer></footer>
-</div><!--end wrapper-->
+            </div>
+
+
+          </div>
+        </div>
+
+        
+      </div>
+      <div class="col-md-8">
+        <h2 >
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci illo inventore magni nisi odit perspiciatis quas totam? Expedita, maiores, quia? Amet dicta incidunt laudantium non numquam, officia velit. Accusamus doloremque illum laudantium praesentium reprehenderit. Accusamus at aut consequuntur cupiditate dignissimos dolor ducimus eos esse eum expedita fugiat fugit illum incidunt inventore iste minima nemo neque nesciunt nihil nisi odio optio, placeat porro possimus quaerat quas quasi quos repellendus reprehenderit sapiente suscipit totam velit voluptate. Dicta non provident temporibus. Ad aliquid amet animi asperiores aut cum distinctio dolor, dolore dolores doloribus dolorum est et explicabo harum hic itaque molestias nam natus nobis nulla odio odit officiis omnis perspiciatis provident quae quam quas qui quis quisquam quod saepe sequi suscipit totam unde voluptas voluptate. Adipisci commodi consequuntur earum fugit, illo laborum libero magnam nihil, quos recusandae sunt suscipit tenetur unde! Ad adipisci at cupiditate deserunt dicta distinctio dolorum eius exercitationem expedita incidunt inventore ipsam nam nesciunt nihil obcaecati odio officiis perferendis porro praesentium quae quia quibusdam, quod, ratione reiciendis tempore. Adipisci autem culpa dicta dolor, dolorum ducimus eos eum explicabo hic necessitatibus nihil omnis pariatur reiciendis repellat repellendus saepe sed sequi vel. Ad adipisci animi at aut consequuntur corporis cupiditate dolore dolores dolorum ex hic impedit minus natus necessitatibus nihil obcaecati officia pariatur perferendis placeat, porro quam quisquam quo quod repellat reprehenderit rerum saepe sapiente sed sequi suscipit tenetur totam, veniam, voluptas! Amet aspernatur debitis eligendi et mollitia perferendis quos vel veniam voluptatem voluptatum. Accusantium ad alias amet eveniet illo labore magni minima molestias, nobis perferendis perspiciatis quas recusandae sequi sint tempore temporibus veniam? Alias aperiam, atque deserunt eos facere natus officiis perspiciatis provident qui sint tempora vero, voluptas. Animi corporis cum doloribus dolorum ex facilis fugit, id nulla recusandae repellendus totam, voluptas voluptatem. Ab aut deserunt eveniet minima minus officia suscipit! A aspernatur debitis doloremque doloribus ea facilis iure labore laudantium maiores minima nobis non obcaecati perspiciatis praesentium quaerat, quas quia quod reiciendis rerum similique tempora voluptate voluptatem voluptates! Ab animi consequatur dolores doloribus ea eveniet libero necessitatibus odio, odit, officiis provident, quas rem similique sit totam! Ipsam laborum minus tempora! Adipisci architecto asperiores at consectetur cupiditate dicta earum ex excepturi id incidunt laudantium magnam magni nihil nisi nostrum, optio quam quidem quo recusandae sit suscipit tempora tempore. Asperiores cupiditate dolores doloribus, ducimus eligendi facilis fuga impedit, laborum minima minus natus nobis numquam placeat, possimus quae quaerat quisquam tenetur unde vitae voluptatum? Assumenda, exercitationem, ut! Ad alias autem dicta dolor ducimus illo magnam molestias, odio quidem quo ratione, recusandae repellendus sint sunt vero! Accusantium aut cum dolorum excepturi in iusto magni mollitia necessitatibus nemo, quos rem repellat sapiente, sequi similique, veniam! Aperiam autem deserunt, ea eius esse ex laboriosam maxime molestias mollitia necessitatibus nostrum odio pariatur placeat reprehenderit sapiente temporibus totam ut voluptates. Doloribus eaque eius fugiat id minus pariatur rem voluptate voluptatem. Debitis eligendi nisi quam vitae. At atque consectetur cumque est eum fuga maiores molestiae officia quidem quos. Eaque nobis non repellendus veniam? Aperiam asperiores atque blanditiis dicta dolorem ducimus fuga necessitatibus omnis veniam. A accusantium architecto at consequuntur culpa ducimus enim error expedita explicabo iste laboriosam mollitia, nam pariatur provident quasi rerum sapiente voluptates? Adipisci asperiores assumenda aut autem blanditiis commodi consequatur eligendi eveniet excepturi fuga harum in, ipsa ipsam ipsum iusto libero magni officiis omnis perspiciatis possimus quam rem sit temporibus totam ullam voluptas voluptatem voluptatibus. Aperiam, cum ducimus et exercitationem fugiat sunt vel velit. Consequatur doloremque error illum, ipsa modi neque odit officiis quam unde! A accusamus amet, animi aut cum dignissimos eligendi esse est et explicabo fuga fugit id impedit incidunt ipsum iure laudantium natus necessitatibus nobis, optio porro, quis quo recusandae reiciendis sapiente sed soluta tempore veniam vero voluptatibus? A amet architecto aspernatur commodi consequuntur debitis dolorum eaque eius eum excepturi fuga inventore ipsum iusto magnam magni nemo neque non nostrum nulla, officia officiis possimus, quibusdam quidem recusandae repudiandae sapiente soluta sunt tenetur unde vel veritatis vitae voluptates voluptatum? Ab amet id libero, nihil omnis quis rem sed vitae. A accusamus alias aperiam blanditiis, consequuntur cum cupiditate dolor dolore doloremque eaque earum eos, eum exercitationem in iste laboriosam maxime minima necessitatibus nostrum numquam odit officiis porro quis quos recusandae sequi sint soluta suscipit tempora tempore ut vitae voluptatem voluptatum? Accusamus consectetur explicabo harum illo labore libero magnam maiores obcaecati, porro quae quas quod sit soluta voluptatem voluptatibus? Aperiam deserunt doloribus dolorum et molestiae nesciunt, quisquam reprehenderit! Accusantium ad at dolorem dolores ea, enim inventore maiores molestias odio, quibusdam saepe tempora velit voluptates. Ab aspernatur facilis impedit ipsum iste, maiores quam repellendus. Cumque non quisquam, reiciendis rerum tempora voluptatem! Atque eos, fugiat magnam nemo nulla tempora voluptates? Adipisci architecto autem consequuntur corporis culpa cum cumque deleniti dicta dolor dolores eaque eius eos exercitationem expedita hic id iusto laboriosam minima minus molestiae neque nesciunt nihil officia placeat, provident quaerat qui, quia quisquam quos reprehenderit unde veniam vero voluptate? Atque cupiditate debitis ducimus eius eligendi est et fuga impedit ipsum itaque laborum magnam, maiores nesciunt perspiciatis porro praesentium quasi repudiandae sequi voluptates voluptatibus. Amet aspernatur aut commodi consectetur cum cumque, deserunt dicta dolorem eaque fugiat impedit ipsam laudantium magnam natus nihil nostrum numquam officiis perferendis quaerat quod repellat suscipit temporibus voluptates? Amet, atque aut consequuntur ea earum error exercitationem incidunt magnam, molestias nam nihil nisi quibusdam veniam voluptatem voluptatibus! Accusantium adipisci animi at corporis dignissimos doloremque dolorum eius eveniet illo in iste maxime mollitia nam placeat provident quam quibusdam quis sunt ut, voluptate! Ab accusantium alias aut commodi dicta earum exercitationem in, incidunt inventore iure maxime nihil non nulla perspiciatis quidem ratione reiciendis rem repellendus tempore voluptatum! Nam, nesciunt, nostrum? Consequatur in iusto temporibus. Facilis quos repellat saepe vero. Ab alias consequuntur distinctio, et fuga fugiat, illo ipsum minima necessitatibus nisi perspiciatis quas? Explicabo in ipsa ipsum natus necessitatibus quos reiciendis ut! Aliquam aliquid culpa deleniti deserunt dolore enim eos eveniet excepturi fuga maiores minus molestiae nemo nesciunt non odit porro quaerat quas sed soluta, ut vel voluptas voluptate? Architecto consectetur et impedit iste placeat repudiandae.
+        </h2>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+</div>
+<footer>
+
+
+</footer>
 
 <!-- *plugin 'userev' concat your vendor js -->
 <!-- build:js scripts/vendor.js -->
