@@ -1,12 +1,354 @@
 @import url("https://fonts.googleapis.com/css?family=Droid+Sans");
+.drop-pad {
+  padding-left: 0;
+  padding-right: 0; }
+
+.bord-bt {
+  border-bottom: 1px solid #fff; }
+
+.bord-rt {
+  border-right: 1px solid #fff; }
+
+.bord-t {
+  border-top: 1px solid #fff; }
+
+.like__block {
+  font: 1.2rem "Droid Sans", sans-serif;
+  color: #7a7880;
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  background: #f6f5f7;
+  position: absolute;
+  top: 0;
+  right: 0; }
+  .like__block_inner {
+    margin-top: 15px; }
+  .like__block_count {
+    margin-top: 7px; }
+  .like__block_icon {
+    color: #d2cfd7;
+    font-size: 3.8rem;
+    display: block; }
+    .like__block_icon:hover {
+      color: #2ac5c6; }
+
+.vertical-divider:after {
+  content: "";
+  display: block;
+  height: 54px;
+  width: 1px;
+  background: #d2cfd7;
+  position: absolute; }
+
+.vertical-divider.minify-divider:after {
+  right: 9px;
+  top: -5px; }
+
+.vertical-divider.main-divider:after {
+  right: -2px;
+  top: -6px; }
+
+.vertical-divider.footer-divider:after {
+  background: #7a7880;
+  right: -1px;
+  top: 15px; }
+
+.vertical-divider.footer-divider.center-dr {
+  right: 7px; }
+
+.preview-img {
+  min-height: 300px; }
+  .preview-img-min {
+    min-height: 150px; }
+
+.panel-part {
+  display: inline-block;
+  position: relative; }
+  .panel-part-left {
+    width: 85%; }
+  .panel-part-right {
+    width: 15%; }
+
+.vert-align-block {
+  display: table; }
+  .vert-align-block > * {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle; }
+
 html {
   font-size: 10px; }
 
 body {
-  font-size: 1rem; }
+  font-size: 1rem;
+  width: 100%;
+  overflow-x: hidden; }
 
 .header {
   background: #48474d; }
+
+.blog {
+  height: 585px; }
+  .blog__header {
+    font: normal 1.2rem "Droid Sans", sans-serif;
+    color: #48474d; }
+  .blog__author {
+    display: inline-block;
+    margin-bottom: 14px;
+    font: 1.2rem "Droid Sans", sans-serif;
+    color: #7a7880; }
+  .blog__item {
+    margin-bottom: 34px; }
+    .blog__item_data {
+      display: table; }
+      .blog__item_data--green {
+        width: 38px;
+        height: 38px;
+        border-bottom: 1px solid #48474d;
+        background: #2ac5c6;
+        color: #fff;
+        font-size: 1rem; }
+    .blog__item_dt {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center; }
+    .blog__item_header {
+      font: bold 1.2rem "Droid Sans", sans-serif;
+      margin: 0 0 6px 0;
+      color: #48474d; }
+    .blog__item_text {
+      font: 1.1rem/1.4 "Droid Sans", sans-serif;
+      color: #646464; }
+    .blog__item_divider {
+      font: 1.1rem/1.4 "Droid Sans", sans-serif;
+      color: #2ac5c6; }
+
+.project__minify_description {
+  padding: 20px 0 0 18px;
+  background-color: #f6f5f7; }
+
+.project__minify_title {
+  font: bold 1.6rem "Droid Sans", sans-serif;
+  color: #48474d;
+  margin: 0 0 4px 0; }
+
+.project__minify_post-data {
+  font: 1.1rem "Droid Sans", sans-serif;
+  color: #7a7880; }
+
+.project__minify__panel {
+  padding: 25px 0; }
+  .project__minify__panel_link {
+    display: block; }
+  .project__minify__panel_icon {
+    font-size: 3.8rem;
+    color: #d2cfd7; }
+    .project__minify__panel_icon:hover {
+      color: #2ac5c6; }
+
+.project__main_preview {
+  height: 450px;
+  position: relative;
+  background: #d2cfd7; }
+  .project__main_preview_inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -94px; }
+  .project__main_preview_icon {
+    display: table;
+    width: 188px;
+    height: 188px; }
+    .project__main_preview_icon--green {
+      border-bottom: 1px solid #48474d;
+      background: #2ac5c6;
+      color: #fff;
+      font: bold 7.2rem "Droid Sans", sans-serif; }
+    .project__main_preview_icon-cell {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center; }
+
+.project__main_description {
+  padding: 20px 0 0 18px;
+  background-color: #f6f5f7; }
+
+.project__main_title {
+  font: bold 2.4rem "Droid Sans", sans-serif;
+  color: #48474d;
+  margin: 0 0 4px 0; }
+
+.project__main_post-data {
+  font: 1.2rem "Droid Sans", sans-serif;
+  color: #7a7880; }
+
+.project__main__panel {
+  padding: 15px 0 15px 0;
+  font-size: 0; }
+  .project__main__panel_text {
+    font: 1.2rem "Droid Sans", sans-serif;
+    color: #646464; }
+
+.project__main_img-wrapper {
+  font-size: 0; }
+
+.project__main_img-view {
+  display: inline-block;
+  width: 50%; }
+
+.footer {
+  background: #48474d;
+  min-height: 76px; }
+  .footer__copyright-wrapper {
+    height: 76px;
+    margin-left: 38px; }
+  .footer__copyright {
+    font: 1rem "Droid Sans", sans-serif;
+    color: #7a7880; }
+  .footer__brand-wrapper {
+    width: 100%; }
+    .footer__brand-wrapper .footer__brand_item {
+      height: 76px; }
+      .footer__brand-wrapper .footer__brand_item:after {
+        content: "";
+        background: url("../img/brand-sprite.png") no-repeat;
+        display: inline-block; }
+      .footer__brand-wrapper .footer__brand_item:hover:after {
+        opacity: 0.6; }
+      .footer__brand-wrapper .footer__brand_item.urban:after {
+        width: 81px;
+        height: 26px;
+        background-position: 0 0; }
+      .footer__brand-wrapper .footer__brand_item.polisha:after {
+        width: 92px;
+        height: 30px;
+        background-position: -189px 0; }
+      .footer__brand-wrapper .footer__brand_item.cut:after {
+        width: 58px;
+        height: 30px;
+        background-position: -398px 0; }
+      .footer__brand-wrapper .footer__brand_item.zmey:after {
+        width: 92px;
+        height: 30px;
+        background-position: -576px 0; }
+      .footer__brand-wrapper .footer__brand_item.enoti:after {
+        width: 72px;
+        height: 28px;
+        background-position: -776px 0; }
+      .footer__brand-wrapper .footer__brand_item.sowo:after {
+        width: 99px;
+        height: 30px;
+        background-position: -956px 0; }
+  .footer__social-wrapper {
+    width: 90%;
+    margin: 0 auto; }
+    .footer__social-wrapper .footer__social_item {
+      height: 76px; }
+      .footer__social-wrapper .footer__social_item:after {
+        content: "";
+        background: url("../img/social-sprite.png") no-repeat;
+        display: inline-block; }
+      .footer__social-wrapper .footer__social_item:hover:after {
+        opacity: 0.6; }
+      .footer__social-wrapper .footer__social_item.facebook:after {
+        width: 10px;
+        height: 18px;
+        background-position: 0 0; }
+      .footer__social-wrapper .footer__social_item.youtube:after {
+        width: 22px;
+        height: 21px;
+        background-position: -28px 0; }
+      .footer__social-wrapper .footer__social_item.wordpress:after {
+        width: 22px;
+        height: 22px;
+        background-position: -66px 0; }
+      .footer__social-wrapper .footer__social_item.twitter:after {
+        width: 16px;
+        height: 19px;
+        background-position: -107px 0; }
+      .footer__social-wrapper .footer__social_item.pinterest:after {
+        width: 15px;
+        height: 18px;
+        background-position: -140px 0; }
+
+.drop-pad {
+  padding-left: 0;
+  padding-right: 0; }
+
+.bord-bt {
+  border-bottom: 1px solid #fff; }
+
+.bord-rt {
+  border-right: 1px solid #fff; }
+
+.bord-t {
+  border-top: 1px solid #fff; }
+
+.like__block {
+  font: 1.2rem "Droid Sans", sans-serif;
+  color: #7a7880;
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  background: #f6f5f7;
+  position: absolute;
+  top: 0;
+  right: 0; }
+  .like__block_inner {
+    margin-top: 15px; }
+  .like__block_count {
+    margin-top: 7px; }
+  .like__block_icon {
+    color: #d2cfd7;
+    font-size: 3.8rem;
+    display: block; }
+    .like__block_icon:hover {
+      color: #2ac5c6; }
+
+.vertical-divider:after {
+  content: "";
+  display: block;
+  height: 54px;
+  width: 1px;
+  background: #d2cfd7;
+  position: absolute; }
+
+.vertical-divider.minify-divider:after {
+  right: 9px;
+  top: -5px; }
+
+.vertical-divider.main-divider:after {
+  right: -2px;
+  top: -6px; }
+
+.vertical-divider.footer-divider:after {
+  background: #7a7880;
+  right: -1px;
+  top: 15px; }
+
+.vertical-divider.footer-divider.center-dr {
+  right: 7px; }
+
+.preview-img {
+  min-height: 300px; }
+  .preview-img-min {
+    min-height: 150px; }
+
+.panel-part {
+  display: inline-block;
+  position: relative; }
+  .panel-part-left {
+    width: 85%; }
+  .panel-part-right {
+    width: 15%; }
+
+.vert-align-block {
+  display: table; }
+  .vert-align-block > * {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle; }
 
 ul li, .navbar-nav li {
   list-style: none; }
@@ -15,9 +357,21 @@ ul li, .navbar-nav li {
     ul li a:hover, .navbar-nav li a:hover {
       background: transparent; }
 
+.scrollable.default-skin .scroll-bar {
+  background: #e8e6ec;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; }
+  .scrollable.default-skin .scroll-bar .thumb {
+    background: #48474d;
+    opacity: 1; }
+
+.main__nav .navbar-nav {
+  position: relative;
+  margin-left: -40px; }
+
 .site__logo_link {
   position: relative;
-  padding: 10px 0 0 20px;
+  padding: 10px 0 0 35px;
   display: inline-block; }
 
 .header {
@@ -71,12 +425,13 @@ ul li, .navbar-nav li {
     .main__nav_link:hover {
       color: #2ac5c6; }
 
-.main__nav--panel {
-  margin-right: 5px; }
-  .main__nav--panel .main__nav_item--panel {
+.main__nav_panel {
+  margin-right: 35px;
+  float: right; }
+  .main__nav_panel .main__nav_item_panel {
     width: auto;
-    margin-left: 40px; }
-    .main__nav--panel .main__nav_item--panel .main__nav_notice {
+    margin-left: 26px; }
+    .main__nav_panel .main__nav_item_panel .main__nav_notice {
       display: inline-block;
       background: #2ac5c6;
       color: #fff;
@@ -86,39 +441,59 @@ ul li, .navbar-nav li {
       height: 18px;
       vertical-align: middle;
       position: absolute;
-      left: 12px;
-      top: 3px;
+      left: 25px;
+      top: 10px;
       z-index: 3;
       font-size: 1rem;
       line-height: 2rem;
       text-align: center; }
-  .main__nav--panel .main__nav_link--panel {
-    position: relative; }
-    .main__nav--panel .main__nav_link--panel:after {
+    .main__nav_panel .main__nav_item_panel.open .dropdown-menu {
+      min-width: auto;
+      left: 0;
+      padding: 30px 30px 0 30px; }
+  .main__nav_panel .main__nav_link_panel {
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px; }
+    .main__nav_panel .main__nav_link_panel:after {
       content: "";
       display: inline-block;
       vertical-align: middle;
       background: url("../img/panel-icon-sprite.png") 0 0 no-repeat;
-      width: 20px;
-      height: 20px; }
-    .main__nav--panel .main__nav_link--panel.pn-settings:after {
+      margin: 0 auto; }
+    .main__nav_panel .main__nav_link_panel.pn-settings:after {
       width: 21px;
       height: 21px;
       background-position: 0 0;
-      margin: -10px 0 0 -10px; }
-    .main__nav--panel .main__nav_link--panel.pn-notice:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: 11px 0 0 10px; }
+    .main__nav_panel .main__nav_link_panel.pn-notice:after {
       width: 21px;
       height: 28px;
       background-position: -33px 0;
-      margin: -10px 0 0 -14px; }
-    .main__nav--panel .main__nav_link--panel.pn-search:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: 10px 0 0 14px; }
+    .main__nav_panel .main__nav_link_panel.pn-search:after {
       width: 24px;
       height: 24px;
       background-position: -64px 0;
-      margin: -12px 0 0 -12px; }
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: 12px 0 0 12px; }
 
 .main {
-  margin-top: 100px; }
+  margin-top: 102px; }
 
 .sidebar__nav {
   padding-bottom: 20px; }
@@ -142,29 +517,63 @@ ul li, .navbar-nav li {
   font-size: 1.2rem;
   margin: 30px 0; }
 
-.blog__header {
-  font: normal 1.2rem "Droid Sans", sans-serif; }
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  .main__nav {
+    min-height: 0; }
+    .main__nav .navbar-nav {
+      margin-left: 0; }
+    .main__nav .main__nav_item {
+      width: 100%; }
+  .main__nav_panel {
+    float: none;
+    margin-right: 0;
+    text-align: center; }
+    .main__nav_panel .main__nav_item_panel {
+      float: left;
+      width: auto; }
+      .main__nav_panel .main__nav_item_panel:first-child {
+        margin-left: 0; }
+    .main__nav_panel .navbar-nav {
+      margin-left: 0;
+      display: inline-block; }
+  .main {
+    margin-top: 142px; }
+  .project__main .preview-img {
+    min-height: 0; } }
 
-.blog__author {
-  display: inline-block;
-  margin-bottom: 14px;
-  font: 1.2rem "Droid Sans", sans-serif; }
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  .main__nav_panel {
+    float: none;
+    margin-right: 0;
+    text-align: center; }
+    .main__nav_panel .main__nav_item_panel {
+      float: left;
+      width: auto; }
+      .main__nav_panel .main__nav_item_panel:first-child {
+        margin-left: 0; }
+    .main__nav_panel .navbar-nav {
+      margin-left: 0;
+      display: inline-block; } }
 
-.blog__item_data {
-  display: table; }
-  .blog__item_data--green {
-    width: 38px;
-    height: 38px;
-    border-bottom: 1px solid #48474d;
-    background: #2ac5c6;
-    color: #fff;
-    font-size: 1rem; }
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  .main__nav .main__nav_item {
+    width: auto; } }
 
-.blog__item_dt {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center; }
-
-.blog__item_header {
-  font: bold 1.2rem "Droid Sans", sans-serif;
-  margin: 0 0 6px 0; }
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  .main {
+    margin-top: 102px; }
+  .project__main .preview-img {
+    min-height: 300px; }
+  .main__nav_panel {
+    float: right;
+    position: relative;
+    left: -20px; }
+  .main__nav .main__nav_item {
+    width: 134px; }
+    .main__nav .main__nav_item_panel {
+      width: auto; } }

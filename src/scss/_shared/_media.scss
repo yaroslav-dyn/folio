@@ -1,0 +1,106 @@
+//classes for media
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+.main__nav{
+    min-height: 0;
+  .navbar-nav{
+    margin-left: 0;
+  }
+  .main__nav_item{
+    width: 100%;
+  }
+ }
+
+.main__nav_panel{
+  float: none;
+  margin-right: 0;
+  text-align: center;
+  .main__nav_item_panel{
+    float: left;
+    width: auto;
+    &:first-child{
+      margin-left: 0;
+    }
+  }
+  .navbar-nav{
+    margin-left: 0;
+    display: inline-block;
+  }
+}
+
+ .main{
+    margin-top: 142px;
+ } 
+ .project__main{
+  .preview-img {
+    min-height: 0;
+  }
+ }
+}//end 320
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+.main__nav_panel{
+  float: none;
+  margin-right: 0;
+  text-align: center;
+  .main__nav_item_panel{
+    float: left;
+    width: auto;
+    &:first-child{
+      margin-left: 0;
+    }
+  }
+  .navbar-nav{
+    margin-left: 0;
+    display: inline-block;
+  }
+}
+
+
+}// End 480
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+.main__nav{
+  .main__nav_item{
+    width: auto;
+  }
+ } 
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  .main{
+    margin-top: 102px;
+  } 
+  .project__main{
+    .preview-img {
+      min-height: 300px;
+    }
+  }
+  .main__nav{
+    &_panel{
+      float: right;
+      position: relative;
+      left: -20px;
+    }
+    .main__nav_item{
+      width: 134px;
+      &_panel{
+          width: auto;
+        }    
+    }
+  } 
+
+}//end 1200px
+
+

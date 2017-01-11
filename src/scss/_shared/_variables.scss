@@ -1,13 +1,22 @@
 $main-font-family: "Droid Sans", sans-serif;
 //colors & bg
 $header_bg: #48474d;
+$description-bg: #f6f5f7;
+$headers-color: #48474d;
+$paragraph-color:#646464;
+$meta-text-color: #7a7880;
+$project-icon-color: #d2cfd7;
+$panel_text: #646464;
+$footer-bg: #48474d;
+
 
 $main__nav_link-color: #7a7880;
 $main__nav_link-color-hover: #2ac5c6;
 $main__nav_dropdown-bg: #3b3a40;
 
 //sizes
-$header-height: 100px;
+$header-height: 102px;
+$footer-height: 76px;
 
 
 //mixins
@@ -16,3 +25,106 @@ $header-height: 100px;
   -webkit-border-radius: $x;
   border-radius: $x;
 }
+
+//classes
+.drop-pad{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.bord{
+  &-bt{
+    border-bottom: 1px solid #fff;
+  }
+  &-rt{
+    border-right: 1px solid #fff;
+  }
+  &-t{
+    border-top: 1px solid #fff;
+  }
+}
+.like__block{
+  font: 1.2rem $main-font-family;
+  color: $meta-text-color;
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  background: #f6f5f7;
+  position: absolute;
+  top: 0;
+  right: 0;
+  &_inner{
+    margin-top: 15px;
+  }
+  &_count{
+    margin-top: 7px;
+  }
+  &_icon{
+    color: $project-icon-color;
+    font-size: 3.8rem;
+    display: block;
+    &:hover{
+      color: $main__nav_link-color-hover;
+    }
+  }
+}
+.vertical-divider{
+  &:after{
+    content: "";
+    display: block;
+    height: 54px;
+    width: 1px;
+    background: $project-icon-color;
+    position: absolute;
+  }
+  &.minify-divider{
+    &:after{
+      right: 9px;
+      top: -5px;
+    }
+  }
+  &.main-divider{
+    &:after{
+    right: -2px;
+    top: -6px;
+    }
+  }
+  &.footer-divider{
+    &:after{
+      background: $meta-text-color;
+      right: -1px;
+      top: 15px;
+    }
+    &.center-dr{
+      right: 7px;
+    }
+  }
+}
+
+.preview-img{
+  min-height: 300px;
+  &-min{
+    min-height: 150px;
+  }
+}
+
+.panel-part{
+  display: inline-block;
+  position: relative;
+  &-left{
+    width: 85%;
+  }
+  &-right{
+    width: 15%;
+  }
+}
+
+.vert-align-block{
+  display: table;
+  >*{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+

@@ -4,8 +4,271 @@ html{
 }
 body{
   font-size: 1rem;
+  width: 100%;
+  overflow-x: hidden;
+
 }
 
 .header{
   background: $header_bg;
 }
+
+//Blog in sidebar
+.blog {
+  height: 585px;
+  &__header{
+    font: normal 1.2rem $main-font-family;
+    color: $headers-color;
+  }
+  &__author{
+    display: inline-block;
+    margin-bottom: 14px;
+    font: 1.2rem $main-font-family;
+    color: $meta-text-color;
+  }
+  &__item {
+    margin-bottom: 34px;
+    &_data {
+      display: table;
+      &--green {
+        width: 38px;
+        height: 38px;
+        border-bottom: 1px solid $headers-color;
+        background: $main__nav_link-color-hover;
+        color: #fff;
+        font-size: 1rem;
+      }
+
+    }
+    &_dt {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+    }
+    &_header {
+      font: bold 1.2rem $main-font-family;
+      margin: 0 0 6px 0;
+      color: $headers-color;
+
+    }
+    &_text{
+      font: 1.1rem/1.4 $main-font-family;
+      color: $paragraph-color;
+    }
+    &_divider{
+      font: 1.1rem/1.4 $main-font-family;
+      color: $main__nav_link-color-hover;
+    }
+  }
+}
+
+//project general
+.project {
+  &__minify {
+    &_description {
+      padding: 20px 0 0 18px;
+      background-color: $description-bg;
+    }
+    &_title {
+      font: bold 1.6rem $main-font-family;
+      color: $headers-color;
+      margin: 0 0 4px 0;
+    }
+    &_post-data {
+      font: 1.1rem $main-font-family;
+      color: $meta-text-color;
+    }
+    &__panel {
+      padding: 25px 0;
+      &_link {
+        display: block;
+      }
+      &_icon {
+        font-size: 3.8rem;
+        color: $project-icon-color;
+        &:hover {
+          color: $main__nav_link-color-hover;
+        }
+      }
+    }
+  }
+  &__main {
+    &_preview{
+      height: 450px;
+      position: relative;
+      background: $project-icon-color;
+        &_inner{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin: -94px;
+        }
+      &_icon {
+        display: table;
+        width: 188px;
+        height: 188px;
+        &--green {
+          border-bottom: 1px solid $headers-color;
+          background: $main__nav_link-color-hover;
+          color: #fff;
+          font: bold 7.2rem $main-font-family;
+        }
+        &-cell {
+          display: table-cell;
+          vertical-align: middle;
+          text-align: center;
+
+        }
+      }
+    }
+    &_description {
+      padding: 20px 0 0 18px;
+      background-color: $description-bg;
+    }
+    &_title {
+      font: bold 2.4rem $main-font-family;
+      color: $headers-color;
+      margin: 0 0 4px 0;
+    }
+    &_post-data {
+      font: 1.2rem $main-font-family;
+      color: $meta-text-color;
+    }
+    &__panel {
+      padding: 15px 0 15px 0;
+      font-size: 0;
+      &_text{
+        font: 1.2rem $main-font-family;
+        color: $panel_text;
+      }
+    }
+    &_img-wrapper{
+      font-size: 0;
+    }
+    &_img-view{
+      display: inline-block;
+      width: 50%;
+    }
+  }
+}//end project
+
+//footer
+.footer{
+  background: $footer-bg;
+  min-height: 76px;
+  &__copyright-wrapper{
+    height: $footer-height;
+    margin-left:  38px;
+  }
+  &__copyright{
+    font: 1rem $main-font-family;
+    color: $meta-text-color;
+  }
+  &__brand-wrapper{
+    width: 100%;
+    .footer__brand_item{
+      height: $footer-height;
+      &:after{
+        content: "";
+        background: url("../img/brand-sprite.png") no-repeat;
+        display: inline-block;
+      }
+      &:hover:after{
+        opacity: 0.6;
+      }
+      &.urban{
+        &:after{
+          width: 81px;
+          height: 26px;
+          background-position: 0 0;
+        }
+      }
+      &.polisha{
+        &:after{
+          width: 92px;
+          height: 30px;
+          background-position: -189px 0;
+        }
+      }
+      &.cut{
+        &:after{
+          width: 58px;
+          height: 30px;
+          background-position: -398px 0;
+        }
+      }
+      &.zmey{
+        &:after{
+          width: 92px;
+          height: 30px;
+          background-position: -576px 0;
+        }
+      }
+      &.enoti{
+        &:after{
+          width: 72px;
+          height: 28px;
+          background-position: -776px 0;
+        }
+      }
+      &.sowo{
+        &:after{
+          width: 99px;
+          height: 30px;
+          background-position: -956px 0;
+        }
+      }
+    }
+  }
+  &__social-wrapper{
+    width: 90%;
+    margin: 0 auto;
+    .footer__social_item{
+      height: $footer-height;
+      &:after{
+        content: "";
+        background: url("../img/social-sprite.png") no-repeat;
+        display: inline-block;
+      }
+      &:hover:after{
+        opacity: 0.6;
+      }
+      &.facebook{
+        &:after{
+          width: 10px;
+          height: 18px;
+          background-position: 0 0;
+        }
+      }
+      &.youtube{
+        &:after{
+          width: 22px;
+          height: 21px;
+          background-position: -28px 0;
+        }
+      }
+      &.wordpress{
+        &:after{
+          width: 22px;
+          height: 22px;
+          background-position: -66px 0;
+        }
+      }
+      &.twitter{
+        &:after{
+          width: 16px;
+          height: 19px;
+          background-position: -107px 0;
+        }
+      }
+      &.pinterest{
+        &:after{
+          width: 15px;
+          height: 18px;
+          background-position: -140px 0;
+        }
+      }
+    }
+  }
+
+}//end footer
